@@ -1,0 +1,285 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><style>/* Workaround for 'break-before:avoid' */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+span,
+q {
+  display: block;
+}
+
+p {
+  margin: 0;
+}
+
+@page {
+  size: letter;
+  margin: 15mm 0 20mm 0;
+}
+@page :first {}
+a {
+  color: #222222;
+  font-weight: inherit;
+  text-decoration: none;
+}
+a[href] {
+  text-decoration: underline;
+  text-decoration-color: #888888;
+}
+
+p,
+q {
+  line-height: 1.25em;
+}
+
+li {
+  line-height: 1.35em;
+}
+li:first-child {
+  margin-top: 0;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+.content {
+  width: 1000px;
+  height: auto;
+  padding: 0 50px;
+  margin: 0 auto;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #222222;
+}
+
+.section {
+  border-top: 1px solid;
+  padding-top: 1em;
+}
+
+.table {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+.table .main {
+  display: table-cell;
+  width: 85%;
+}
+.table .side {
+  display: table-cell;
+  min-width: 15%;
+}
+
+.summary:empty {
+  display: none;
+}
+
+.section-title {
+  font-size: 1.25em;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin: 0 0 1em 0;
+}
+
+.margin-container-2:not(:first-child) {
+  margin-top: 1em;
+}
+
+.margin-container-3:not(:first-child) {
+  margin-top: 1.5em;
+}
+
+.margin-container-4:not(:first-child) {
+  margin-top: 2.5em;
+}
+
+.padding-container-2 {
+  padding: 1em 0;
+}
+
+.margin-text-1 {
+  margin-top: 2px;
+}
+.margin-text-1:empty {
+  display: none;
+}
+
+.margin-text-2 {
+  margin-top: 4px;
+}
+.margin-text-2:empty {
+  display: none;
+}
+
+.margin-text-3 {
+  margin-top: 6px;
+}
+.margin-text-3:empty {
+  display: none;
+}
+
+.margin-text-4 {
+  margin-top: 8px;
+}
+.margin-text-4:empty {
+  display: none;
+}
+
+.margin-text-5 {
+  margin-top: 14px;
+}
+.margin-text-5:empty {
+  display: none;
+}
+
+.no-break {
+  break-inside: avoid;
+}
+
+.no-alone-1 {
+  break-inside: avoid;
+}
+.no-alone-1::after {
+  content: "";
+  display: block;
+  height: 75px;
+  margin-bottom: -75px;
+}
+
+.no-alone-2 {
+  break-inside: avoid;
+}
+.no-alone-2::after {
+  content: "";
+  display: block;
+  height: 150px;
+  margin-bottom: -150px;
+}
+
+.markdown h1 {
+  font-size: 160%;
+  font-weight: bolder;
+}
+.markdown h2 {
+  font-size: 150%;
+  font-weight: bolder;
+}
+.markdown h3 {
+  font-size: 140%;
+  font-weight: bolder;
+}
+.markdown h4 {
+  font-size: 130%;
+  font-weight: bold;
+}
+.markdown h5 {
+  font-size: 120%;
+  font-weight: bold;
+}
+.markdown h6 {
+  font-size: 110%;
+  font-weight: bold;
+}
+.markdown ul,
+.markdown ol {
+  list-style-type: disc;
+}
+.markdown img {
+  display: block;
+  margin: 1em auto;
+  max-width: 1000px;
+  text-align: center;
+}
+.markdown blockquote {
+  margin: 1em 0;
+  padding: 15px 1em;
+}
+.markdown blockquote p {
+  display: inline;
+}
+.markdown p:not(:first-child) {
+  margin-top: 0.5em;
+}
+.markdown code {
+  font-family: monospace;
+}
+
+.main .highlights {
+  width: 100%;
+  display: block;
+  padding: 0;
+  margin-bottom: 0;
+}
+.main .highlights li {
+  font-size: 1em;
+  list-style-type: disc;
+}
+.main .left {
+  text-align: left;
+  display: table-cell;
+  width: 80%;
+}
+.main .left .title {
+  font-size: 1.25em;
+  font-weight: bold;
+  display: block;
+}
+.main .left .subtitle {
+  font-size: 1em;
+  font-weight: lighter;
+  display: block;
+}
+.main .right {
+  text-align: right;
+  display: table-cell;
+}
+.main .right .date {
+  font-size: 1em;
+  font-weight: lighter;
+  white-space: nowrap;
+}
+
+.basics .name {
+  font-size: 1.5em;
+  line-height: 1em;
+  font-weight: bold;
+  display: inline-block;
+  padding-bottom: 0.5em;
+  padding-top: 1em;
+}
+.basics .label {
+  font-size: 1.4em;
+  line-height: 1em;
+  font-weight: lighter;
+  display: inline-block;
+  margin-left: 0.35em;
+}
+.basics .contact {
+  display: block;
+  padding-bottom: 1em;
+}
+
+.education .left {
+  white-space: nowrap;
+}
+.education .title .specialty {
+  font-size: 0.9em;
+  font-weight: normal;
+  display: inline;
+}</style><title>Resume Michael Engen – Software Engineer</title></head><body><div class="content"><div class="basics"><span class="name">Michael Engen, </span><span class="label">Software Engineer</span><div class="contact">engenmt@gmail.com | (352) 644-3723
+ | Columbus, OH
+ | <a href="https://www.linkedin.com/in/michael-engen/">LinkedIn</a></div><div class="section table"><div class="side section-title">Summary</div><div class="main"><div class="markdown"><p>I am a detail-oriented software developer with 9 years of experience using code to solve problems in web development, data engineering, and scientific programming.</p>
+<p>I'm passionate about helping others with code, including developing full-stack monitoring solutions, writing technical documention, and working directly with users to identify product gaps. I care deeply about effective communication and have extensive experience, including six years spent teaching at the undergraduate level, five published novel mathematical research papers, and 18 talks on mathematical research.</p>
+<p>My personal devleopment projects include PermPy, an open-source Python library for working with combinatorial permutation patterns.</p>
+</div></div></div></div><div class="table padding-container-2"><div class="main"><div class="section margin-container-1"><div class="side section-title">Experience</div><div class="main"><div class="header table margin-container-2"><div class="left"><span class="title">Integration Engineer II</span><span class="subtitle margin-text-1"><a>PayPal (remote)</a></span></div><div class="right"><span class="date">Jul 2021 – Present</span></div></div><div class="summary markdown margin-text-4"></div><ul class="highlights margin-text-4"><li>Collaborated with external developers to ensure a smooth integration of PayPal products into their systems</li><li>Designed and developed an internal end-to-end testing tool using Python and JavaScript, enabling simple and accurate testing of PayPal APIs and SDKs</li><li>Troubleshot complex integration issues, liaising between product, engineering, and external teams to quickly track down and resolve technical issues</li><li>Wrote developer-facing documentation and certification requirements to support and streamline integration processes</li></ul><div class="header table margin-container-2"><div class="left"><span class="title">Software Engineer</span><span class="subtitle margin-text-1"><a>Bridgerock Data</a></span></div><div class="right"><span class="date">Jun 2020 – Dec 2020</span></div></div><div class="summary markdown margin-text-4"></div><ul class="highlights margin-text-4"><li>Consulted with external stakeholders to discover their business-intelligence needs and created custom SQL-powered reports for analyzing key performance indicators</li><li>Implemented a new database and computing infrastructure for ETL processes using AWS EC2, ECS, and CloudFormation</li><li>Collaborated both remotely and in-person using an agile software development process and gained experience in a fast-paced startup work environment</li></ul><div class="header table margin-container-2"><div class="left"><span class="title">Software Developer</span><span class="subtitle margin-text-1"><a>University of Florida</a></span></div><div class="right"><span class="date">Feb 2018 – May 2020</span></div></div><div class="summary markdown margin-text-4"></div><ul class="highlights margin-text-4"><li>Co-developed Xronos, an open-source online learning platform that empowers mathematics educators to create online homework assignments using LaTeX </li><li>Collected product feedback by meeting directly with instructors and students</li></ul><div class="header table margin-container-2"><div class="left"><span class="title">NSF Mathematical Sciences Graduate Intern</span><span class="subtitle margin-text-1"><a>Oak Ridge National Laboratory</a></span></div><div class="right"><span class="date">May 2017 – Jul 2017</span></div></div><div class="summary markdown margin-text-4"></div><ul class="highlights margin-text-4"><li>Developed and implemented a frequent subgraph mining algorithm for extracting features from plaintext cancer pathology reports in Python</li><li>Utilized feature selection to improve classification rate of the automatic pathology reporting</li></ul><div class="header table margin-container-2"><div class="left"><span class="title">Graduate Teaching Assistant</span><span class="subtitle margin-text-1"><a>University of Florida</a></span></div><div class="right"><span class="date">Aug 2015 – May 2021</span></div></div><div class="summary markdown margin-text-4"></div><ul class="highlights margin-text-4"><li>Developed curriculum and instructed students, both in group settings and one-on-one</li><li>Measured students' performance through proctored assessments both in-person and remotely</li></ul></div></div><div class="section margin-container-2"><div class="side section-title">Projects</div><div class="main"><div class="header table margin-container-2"><div class="left"><a class="title" href="https://permpy.com/">PermPy</a></div><div class="right"><span class="date">May 2015 – Present</span></div></div><div class="summary markdown margin-text-4"><p>PermPy is an open-source Python library for generating and analyzing large combinatorial datasets.</p>
+</div><ul class="highlights margin-text-4"><li>Refactored module structure and deprecated </li><li>Implemented unit tests, CI/CD, and programmatically generated documentation</li><li>Empowered young researchers with accessible software tools to use in their own computational research</li></ul></div></div><div class="section education margin-container-2"><div class="side section-title">Education</div><div class="main"><div class="header table margin-container-3"><div class="left"><div class="title">Doctor of Philosophy in Mathematics<span class="specialty">, Focus: Discrete Mathematics</span></div><span class="subtitle margin-text-1">University of Florida</span></div><div class="right"><span class="date">Aug 2017 – Aug 2021</span></div></div><div class="summary markdown margin-text-4"></div><div class="header table margin-container-3"><div class="left"><div class="title">Master of Science in Mathematics<span class="specialty">, Focus: Discrete Mathematics</span></div><span class="subtitle margin-text-1">University of Florida</span></div><div class="right"><span class="date">Aug 2015 – May 2017</span></div></div><div class="summary markdown margin-text-4"></div><div class="header table margin-container-3"><div class="left"><div class="title">Bachelor of Science in Mathematics</div><span class="subtitle margin-text-1">University of Florida</span></div><div class="right"><span class="date">Aug 2013 – Aug 2015</span></div></div><div class="summary markdown margin-text-4"></div></div></div></div></div></div></body></html>
